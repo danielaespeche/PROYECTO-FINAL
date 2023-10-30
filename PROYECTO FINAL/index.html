@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDENERGY</title>
+    <link rel="stylesheet" href="css/index.css" >
+    
+    <script src="js/index.js" defer></script>
+    
+<!--    tipografia fuentes-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+    
+   
+
+</head>
+<body>
+
+    <!-- hago el header y nav -->
+
+    <header id="#Home" class="Header">
+        <div class="Header-wrapper">
+            <h1 class="Header-h1">
+               <a href="#Home" title="Vdenergy">
+                   <img src="assets/logo-vdenergy.png" alt="VDENERGY" class="Header-img">
+               </a>
+                
+            </h1>
+            
+               <button class="Header-button">
+                     <svg
+                     xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Header-svg" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>    
+                    </svg>
+                
+                </button>
+                
+            <nav class="Header-nav">
+                <ul class="Nav-ul">
+                    <li class="Nav-li">
+                        <a href="#Mision" title="Misión">MISIÓN</a>
+                    </li>
+                    <li class="Nav-li">
+                        <a href="#Nosotros" title="Nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="Nav-li">
+                        <a href="#Servicios" title="Servicios">SERVICIOS</a>
+                    </li>
+                    
+                    <li class="Nav-li">
+                        <a href="#Contacto" title="Contacto" >CONTACTO</a>
+                    </li>
+                </ul>
+                
+            </nav>
+               
+           
+        </div>
+    </header>
+    
+        
+    <!--    Main-->
+
+    <main class="Main">
+        <div class="Main-wrapper">
+            <section class="Main-section">
+               
+               <picture class="Imagenes-picture">
+                   
+                       <source srcset="assets/oficina.jpg" type="image/webp">
+                       <source srcset="assets/oficina.webp" type="image/webp">
+                        <img src="assets/oficina.jpg" alt="oficina" loading="lazy" class="Main-img">
+                   
+               </picture>
+
+               <div class="Fondo-primero">
+                    <div class="Fondo-primer"></div>
+                </div> 
+               
+                <div id="Contacto" class="Inicio-intro">
+                    <ul class="Info-ul">
+                        <li class="Info-li">Minimizamos tu coste energético</li>
+                        <li class="Info-li Titulo-li">TÚ NOS IMPORTAS</li>
+                    </ul>
+                    <div class="Fondo-segundo">
+                        <div class="Fondo-seg"></div>
+                    </div>
+                    
+                    
+                        <!--  formulario-->
+                        
+                    <button class="Formulario-button">Envíanos tu solicitud y te llamamos</button>
+
+                  
+
+                    <div class="Formulario-inicio">
+                      
+                       <form class="Form-form" action="archivo.php" method="post">
+                        
+
+                           
+                            <h3 class="Parrafo-h3">Contáctanos</h3>
+                                
+                            <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required >
+                            
+                            
+                            <input type="number"  name="telefono" class="Form-input"  placeholder="Teléfono" required >
+                                
+                                
+                            <input type="email"  name="email" placeholder="Email" required class="Form-input" >
+                            
+                            
+                            <div class="Check-acepto">
+                                    <input type="checkbox" name="acepto" class="Checkbox" id="acepto" >
+                                    <label class="Acepto" for="acepto">Acepto términos y condiciones</label>
+                                
+                            </div>
+
+                            <input type="submit" value="Enviar" class="Input-submit">
+
+                       </form>
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="Close-svg " viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                        </svg>
+                        
+                    </div>
+                    
+                    
+                   
+                </div>  
+
+                
+
+            </section>
+            
+    <!--            seccion infomativa-->    
+            <div class="Grid-section">
+                <div class="Grid-article">
+                   <div id="Mision" class="Mision-wrapper">
+                        <h2 class="Mision-h2" >Nuestra misión</h2>
+                        
+                        <p class="Mision-p Info-general" >
+                            Desde Vdenergy, nuestra principal misión, es ayudar a nuestros clientes, tanto particulares como empresas a minimizar los costes energéticos, ya sea de su uso particular o derivados de su producción dándoles un servicio cercano, profesional y personalizado.
+                        </p>
+                   </div>
+                   
+                    <div id="Nosotros" class="Nosotros-wrapper">
+                        <h2  class= "Nosotros-h2">Nosotros</h2>
+                        
+                        <p class="Nosotros-p Info-general" >
+                            Proporcionamos un gran ahorro en su factura del que se benefician múltiples clientes repartidos a lo largo de todo el territorio nacional.
+                        </p>
+                    </div>
+                    
+                    <div id="Servicios" class="Servicios-wrapper">
+                         <h2 class="Servicios-h2" >Servicios</h2>
+                         
+                        <p class="Servicios-p Info-general" >
+                          Estudiamos tu consumo y factura para poder ofrecerte la mejor tarifa que se adapte a tus necesidades entre todas las comercializadoras con las que colaboramos. Sin coste alguno.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+                    <!--    TARIFAS-->
+            
+            <section class="Tarifas-section">
+                <h2 class="Tarifas-h2">TIPOS DE TARIFAS</h2>
+                
+                <div class="Tarifas-general">
+                    
+                    <div class="Tarifa-fija">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="Ahorro-svg" viewBox="0 0 16 16">
+                          <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
+                          <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
+                        </svg>
+                    
+                        <h3 class="Tarifa-h3 General-h3">Tarifa precio fijo</h3><br>
+                        <p class="Fijo-p General-p">
+                            Durante 12 meses se fija el precio de comercialización, es la tarifa más utilizada por nuestros clientes, porque se evita la inestabilidad del mercado mayorista y el riesgo lo asume la comercializadora. 
+                        </p>
+                    </div>
+                    
+                    <div class="Tarifa-indexada">
+                       <svg xmlns="http://www.w3.org/2000/svg"                 fill="currentColor" class="Ahorro-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5Z"/>
+                        </svg>
+                        <h3 class="Indexada-h3 General-h3">Tarifa indexada</h3><br>
+                        <p class="Indexada-p General-p">
+                            Consiste en ir a precio de mayorista más los costes operativos que se pagan a la comercializadora, es la más usada por clientes de gran consumo, el riesgo lo asume el cliente, pero en los últimos años este precio de mantiene por debajo del pool.
+                        </p>
+                    </div>
+                    
+                    <div class="Cuota-fija">
+                       
+                       <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Ahorro-svg" viewBox="0 0 16 16">
+                          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM8 1c-1.573 0-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4s.875 1.755 1.904 2.223C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777C13.125 5.755 14 5.007 14 4s-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1Z"/>
+                          <path d="M2 7v-.839c.457.432 1.004.751 1.49.972C4.722 7.693 6.318 8 8 8s3.278-.307 4.51-.867c.486-.22 1.033-.54 1.49-.972V7c0 .424-.155.802-.411 1.133a4.51 4.51 0 0 0-4.815 1.843A12.31 12.31 0 0 1 8 10c-1.573 0-3.022-.289-4.096-.777C2.875 8.755 2 8.007 2 7Zm6.257 3.998L8 11c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13h.027a4.552 4.552 0 0 1 .23-2.002Zm-.002 3L8 14c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.507 4.507 0 0 1-1.3-1.905Z"/>
+                        </svg>
+                        
+                        <h3 class="Cuota-h3 General-h3">Tarifa Cuota Fija</h3><br>
+                        <p class="Cuota-p General-p">
+                            Si quieres tener controla tu gasto en energía y pagar lo mismo cada mes, la tarifa plana es tu mejor opción. Fijamos una cuota mensual fija durante 12 meses que un consumo determinado, así se lo que pago son sobresaltos y la tranquilidad de saber lo que vas a pagar cada mes.
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+                
+            </section>
+
+            <!-- EXTRAS -->
+
+            <section class="Extras-section">
+                <h2 class="Extras-h2">Nuestros servicios extras</h2>
+
+                <div class="Extras-cont">
+                    <div class="Extra-first Extras-general">
+                        <h3 class="Especialista-h3">Gestor especialista</h3>
+                        <p class="Especialista-p">Compara y contrara con la ayuda de un gestor.</p>
+
+                        <picture class="Asesor-picture">
+                   
+                            <source srcset="assets/asesor.jpg" type="image/webp">
+                            <source srcset="assets/asesor.webp" type="image/webp">
+                             <img src="assets/asesor.jpg" alt="asesor" loading="lazy" >
+                        
+                        </picture>
+
+                    </div>
+    
+                    <div class="Extra-second Extras-general">
+                       <p class="App-p"> En proceso nuestra app para que puedas tener toda tu infomación de facturación, al alcance de tu mano.</p>
+
+                        <picture class="App-picture">
+                    
+                            <source srcset="assets/app.jpg" type="image/webp">
+                            <source srcset="assets/app.webp" type="image/webp">
+                            <img src="assets/app.jpg" alt="app loading" loading="lazy" >
+                        
+                        </picture>
+
+                    </div>
+    
+                    <div class="Asistencia-third Extras-general">
+                        <p class="Asistencia-p">Asistencia técnica y reparaciones cualificadas de caldera e instalación eléctrica</p>
+
+                        <picture class="Tecnico-picture">
+                    
+                            <source srcset="assets/tecnico1.jpg" type="image/webp">
+                            <source srcset="assets/tecnico1.webp" type="image/webp">
+                            <img src="assets/tecnico1.jpg" alt="tecnico" loading="lazy" >
+                        
+                        </picture>
+                    </div>
+                </div>
+                
+                
+            </section>
+            
+        <!--       Opiniones slider-->
+            
+            <section class="Opiniones-section">
+              
+                <div class="Opinion-wrapper">
+                   
+                    <div class="Slider-opinion Slider-static">
+                        <h2 class="Nombre-h2">Ester Peraza</h2>
+                        
+                        <p class="Opinion-p">"A pesar de que era reacio al principio, me convencieron con su cercanía y precios competitivos, y ahora recomiendo a todos esta compañía."</p>
+                    </div>
+                   
+                    
+                    <div class="Slider-opinion " >
+                        <h2 class="Nombre-h2">Mauricio Corzo</h2>
+                        
+                        <p class="Opinion-p">"Esta compañía está siempre dispuesta a ayudar y resolver cualquier duda, con precios competitivos y un trato amable y eficiente."</p>
+                    </div>
+                    
+                    <div class="Slider-opinion isActive">
+                        <h2 class="Nombre-h2">Jesika lorena taborda alvarez</h2>
+                        
+                        <p class="Opinion-p">"Gente seria. Lo recomiendo ya que siempre están para cualquier duda y problema. Gracias"</p>
+                    </div>
+                    
+                    <button class="Slider-arrow Slider-next">
+                        <svg class="Slider-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+
+                    <button class="Slider-arrow Slider-prev">
+                        <svg class="Slider-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </button>
+                   
+                </div>
+
+                
+                
+            </section>
+            
+        <!--       Mapa-->
+            
+            <section class="Mapa-section">
+               
+               <div class="Mapa-info">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.5187871842413!2d-5.575948599999999!3d42.6079523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a8912924be5%3A0x31de527e5b30c45c!2sAv.%20Asturias%2C%2024008%20Le%C3%B3n!5e0!3m2!1ses!2ses!4v1689898184002!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="Info-contacto">
+                        <h3 class="Info-h3">Localización</h3>
+                        <p class="Info-p">Avda. Asturias Nº14 Bajo.
+                            24008, León, España.</p>
+                        
+                        <h3 class="Info-h3">Contacto</h3>
+                        <p class="Info-p">987 044 086</p>
+                        
+                        <h3 class="Info-h3">Email</h3>
+                        <p class="Info-p">info@vdenergy.es</p>
+                    </div>
+                
+            </div>
+                
+            </section>
+            
+        </div>
+    
+    
+</main>
+    
+            <!--    footer    -->
+            
+    <footer class="Footer">
+        <div class="Footer-wrapped">
+            <div class="Consultoria-footer">
+                <h2 class="Footer-h2">VDENERGY</h2>
+                <ul class="Footer-ul">
+                    
+                    <li class="Footer-li">
+
+                        <a href="https://vdenergy.es/politica-de-privacidad/" title="Política de privacidad"  target="_blank" class="Privacidad-a">Política de privacidad</a>
+
+                    </li>
+                         
+
+                    <li class="Footer-li">
+
+                        <a href="https://vdenergy.es/politica-de-cookies/" title="Política de cookies"  target="_blank" class="Shop-a">Política de cookies</a>
+
+                    </li>
+                        
+
+                    <li class="Footer-li">
+                        <a href="https://vdenergy.es/aviso-legal/" class="Shipping-a" target="_blank" title="Aviso legal">Aviso legal</a>
+                    </li>
+                        
+                </ul>
+               
+            </div>
+        </div>
+            
+    
+      </footer>
+
+</body>
+</html>

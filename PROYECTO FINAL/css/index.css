@@ -1,0 +1,1388 @@
+       /* reset */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+li{ 
+    list-style: none; }
+
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+a{
+    display: block;    
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+img{
+    display: block;
+    max-width: 100%;
+    width:100%;
+}
+form, input , select , option, textarea , button, fieldset {
+    display: block;
+    font-family: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+svg{
+    display: block;
+    fill: currentColor;
+}
+:root{
+    font-size: 100%;
+
+    /* Tipografías */
+    --font-main : 'Wix Madefor Display', sans-serif;
+    --font-nav: 'Lato', sans-serif;
+    --font-h1:'Wix Madefor Display', sans-serif;
+    --size-nav: 1.8vw;
+    --font-h2: 'Wix Madefor Display', sans-serif;
+    --font-hs: 'Wix Madefor Display', sans-serif;
+    
+    
+    /* Colores */
+    --color-black : black;
+    --color-white : #ECECEC;
+    --color-nav: #17425e;
+    --color-h1: #0d2433;
+   
+    --color-h2: #17425e;
+    --color-hs: #313c73;
+    --bottom-color: #57577a;
+    --color-svg:#1f347a;
+
+    /* Border y befores */
+    --border-height : 2px;
+    --border-main   : var(--border-height) solid var(--color-black); 
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+
+
+                /*. HEADER .--> hacemos el Header que contiene el apartado de navegación con sus correspondientes uls */
+.Header{
+    width:  100%;
+    background-color: white;
+    
+    
+}
+
+.Header-wrapper{
+    width: 100%;
+/*    background-color: aqua;*/
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.9rem;
+    
+    
+}
+
+
+.Header-h1{
+   width: 25%;
+    padding: 1rem;
+}
+
+/* Nav */
+
+
+.Nav-ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    
+}
+
+.Nav-li{
+    font-family: var(--font-nav);
+    color: var(--color-nav);
+    font-size: var(--size-nav); 
+}
+
+.Nav-li:hover{
+    transform: scale(1.3);
+    color: #1f333d;
+    transition: 2s;
+    
+}
+.Header-button{
+    width: 2rem;
+    display: none;
+}
+
+
+
+
+
+            /*.   Main.    */
+
+
+
+.Main{
+    width: 100%;
+    background-color: white;
+}
+.Main-wrapper{
+    width: 100%;
+}
+.Main-section{
+    width: 100%; 
+    position: relative;
+}
+
+
+.Main-img {
+    width: 100%;
+}
+
+
+/* Inicio-intro --- etiqueta en el que se encuentrs la primera parte, junto con el formulario*/
+
+
+.Fondo-primer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Fondo-primer.isActive{
+    display: block;
+}
+.Inicio-intro {
+    max-width: 80vw;
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 15px;
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    padding: 2rem; 
+}
+
+
+.Info-li{
+    width: 70vw;
+    font-family: var(--font-main);
+    font-size: 2.5vw;
+    color: var(--color-hs);
+    padding: .8rem;
+    font-weight: 200;
+    word-spacing: .3rem;
+    margin: auto;
+}
+
+.Titulo-li{
+    max-width: 80vw;
+    font-family: var(--font-h1);
+    font-size: 5vw;
+    font-weight: 800;
+    color: var(--color-h1);
+    word-spacing: 1rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+
+.Fondo-seg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Fondo-seg.isActive{
+    display: block;
+}
+
+
+/* Formulario */
+
+
+.Formulario-inicio{
+    position: relative;
+   
+}
+
+.Form-form{
+    width: 40vw;
+    min-height: 33rem;
+    max-height: 50rem;
+    margin: -30rem  auto;
+    background-color: #263342;
+    padding: 2rem 4em;
+    color: #878791;
+    font-family: var(--font-main);
+    border-radius: 0.80rem;
+    position: absolute;
+    left: 20%;
+}
+
+.Form-input{
+    width: 25vw;
+    height: 5vh;
+    outline: 0;
+    background-color: rgb(247, 247, 247);
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #17425e;
+    
+}
+.Form-input::placeholder{
+    color: #1E1C65;
+    font-size: .9vw;
+}
+
+.Parrafo-h3{
+    width: 25vw;
+    color: #ffffff;
+    border-bottom: 2px solid white;
+    font-size: 2.5vw;
+    margin: auto;
+    font-family: var(--font-main);
+    margin-bottom: 2rem;
+}
+
+.Check-acepto{
+    width: 20vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem auto 2rem;
+    gap: .8rem;
+    
+}
+.Checkbox{
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    
+}
+.Acepto{
+    width: 15vw;
+    font-size: 1vw;
+    color: white;
+    
+}
+
+.Input-submit{
+    width: 70%;
+    color: #191759;
+    background-color: #BAD8FB;
+    padding: .7rem;
+    border-radius: 1rem;
+    margin: auto;
+    font-family: var(--font-nav);
+    font-size: 1vw;
+}
+
+.Formulario-inicio.isActive{
+    display: block;
+}
+
+
+
+.Close-svg{
+    width: 2vw;
+    position: absolute;
+    top: -28.5rem;
+    left: 71.8%;
+    padding: .2rem;
+    fill: #B4C1E2;
+    
+    
+}
+
+.Close-svg.isActive , .Formulario-inicio{
+    display: none;
+}
+
+.Formulario-button{
+    width: 30vw;
+    padding: 2rem;
+    margin: auto;
+    border-radius: .9rem;
+
+    box-shadow: inset 9px -9px 12px #3e3e57,
+            inset -9px 9px 12px #70709d;
+    background-color: var(--bottom-color);
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 2vw;
+    transform: scale(1);
+    transition: 1.5s ease all;
+}
+
+.Formulario-button:hover{
+    transform: scale(1.2);
+}
+
+
+    /*seccion informativa --- parte en la quue explico cuál es el objetivo de la empresa y todo lo que ello conlleva*/
+
+
+.Grid-section{
+    margin-top: 4rem;
+    padding: 3rem;
+    
+}
+
+.Grid-article{
+    width: 99%;
+    background-color: #ebebf2;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 1rem;
+    padding: 4rem;
+    border-radius: .5rem;
+}
+
+.Mision-h2{
+    background-color: #ebebf2;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+    transition: transform .3s ease;
+    
+}
+
+.Mision-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+    word-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.Nosotros-h2{
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+    
+}
+
+.Nosotros-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+    margin-top: 1rem;
+}
+.Servicios-wrapper{
+}
+.Servicios-h2{
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+}
+.Servicios-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+    margin-top: 1rem;
+}
+
+    /*tarifas---- Incluyo las tarifas que puede encontrar cada cliente en las diferentes comercializadoras*/
+
+.Tarifas-section{
+    max-width: 100%;
+    background-color:#c5cbdb;
+    padding: 1.2rem;
+    
+}
+.Tarifas-h2{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    
+    font-family: var(--font-h2);
+    color: var(--color-h2);
+    font-size: 2.5rem;
+    font-weight: 800;
+    word-spacing: 1rem;
+}
+.Tarifas-general{
+
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 1rem;
+    padding: 1rem;
+    font-size: 2vw;
+}
+
+
+.Ahorro-svg{
+    width: 6rem;
+    fill: var(--color-svg);
+    padding: 1.2rem;
+    margin: auto
+}
+
+.General-h3{
+    font-family: var(--font-hs);
+    text-align: center;
+    color: var(--color-hs);
+    font-size: 1.5rem;
+    
+}
+
+.General-p{
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--color-hs);
+    font-size: 1.1rem;
+}
+
+/* Servicios extra --- Informo de los servicios extra que tiene la asesoría, que proporciona al cliente*/
+
+.Extras-section{
+    width: 100%;
+    background-color: rgb(247, 248, 255);
+    padding: 2rem;
+    
+
+}
+.Extras-h2{
+    width: 50%;
+    margin: auto;
+
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    text-align: center;
+    
+}
+
+.Extras-cont{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 2rem;
+}
+
+.Extras-general{
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 15px;
+    background-color: rgb(250, 255, 255);
+    text-align: center;
+
+
+    box-shadow:  -10px 10px 20px #d9dae0,
+             10px -10px 20px #ffffff;
+}
+
+.Extras-general:hover{
+    transform: scale(1.2);
+    transition: 2s ease all;
+}
+
+.Extra-first{
+    width: 30%;
+    
+}
+.Especialista-h3{
+    
+    
+    margin-bottom: 0.5rem;
+
+    font-family: var(--font-hs);
+    color: var(--color-hs);
+    font-size: 1.2rem;
+}
+.Especialista-p{
+   
+    font-family: var(--font-main);
+    color: var(--color-hs);
+    font-size: 1rem;
+}
+
+.Asesor-picture{
+    width: 8rem;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.Extra-second{
+    width: 30%;
+    
+    
+}
+.App-p{
+
+    font-family: var(--font-main);
+    color: var(--color-hs);
+    font-size: 1rem;
+}
+
+.App-picture{
+    width: 8rem;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+.Asistencia-third{
+    width: 30%;
+    
+}
+.Asistencia-p{
+    font-family: var(--font-main);
+    color: var(--color-hs);
+    font-size: 1rem;
+}
+
+.Tecnico-picture{
+    width: 7rem;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+
+    /*opiniones--- Aporto también información de los clientes que quedan satisfechos con el servicio*/
+
+.Opiniones-section{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+ 
+}
+
+.Opiniones-section .Opinion-wrapper{
+    width: 95%;
+    height: 100%; 
+    text-align: center;
+    margin: auto;
+    
+     
+}
+.Slider-opinion{
+
+    width: 50vw;
+
+    position: absolute;
+    opacity: 0;
+    border: 1px solid #c4c4c4;
+    padding: 2rem;
+    border-radius: .9rem;
+    top: 30%;
+    left: 25vw;
+    font-size: 150%;
+    
+}
+
+.Slider-opinion.isActive{
+    opacity: 1;
+}
+
+.Nombre-h2{
+    font-family: var(--font-h2);
+    color: var(--color-h2);
+    
+    padding: 0.5rem;
+    
+}
+.Opinion-p{
+    font-family: var(--font-nav);
+    color: var(--color-hs);
+    font-size: 90%;
+   
+}
+.Slider-arrow{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: .8em;
+
+    position: absolute;
+    top:calc( 50% - 4rem );
+}
+.Slider-next{
+    width: 8vw;
+    right: 5%;
+}
+.Slider-prev{
+    width: 8vw;
+    left: 5%;
+}
+
+
+
+
+    /*MAPA--- Localización de las oficinas y cómo contactarnos*/
+
+.Mapa-section{
+    max-width: 100%;
+    background-color: #232345;
+}
+
+.Mapa-info{
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+iframe{
+    
+    border-radius: 1rem;
+}
+
+.Info-contacto{
+
+    max-width: 50vw;
+    padding: 1rem;
+}
+
+.Info-h3{
+    font-family: var(--font-hs);
+    font-size: 3.5vh;
+    color: white;
+    padding: 1rem.5rem 0 0;
+}
+
+.Info-p{
+    font-family: var(--font-main);
+    font-size: 2.5vh;
+    color: white;
+    padding-top: .5rem;
+}
+
+
+    /*footer-- INCLUYO LAS COOKIES*/
+
+.Footer{
+    max-width: 100%;
+    background-color: black;
+    padding: 2rem;
+    
+}
+.Footer-wrapped{
+    width: 90%;
+    margin: auto;
+    
+}
+.Consultoria-footer{
+    display:grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.Footer-h2{
+    
+    font-family: var(--font-h2);
+    font-size: 6vh;
+    font-weight: 900;
+   margin: auto;
+   color: white;
+    
+}
+
+.Footer-li{
+    color: white;
+    font-family: var(--font-nav);
+    font-size: 3.5vh;
+    padding: 1rem;
+    
+    
+}
+
+.Footer-li:hover{
+    transform: scale(1.2);
+    transition: transform 2s;
+}
+
+
+        /*.    RESPONSIVE      */
+
+    /* Modo ordenador */
+
+@media(max-width: 1024px){
+
+        /* Formulario */
+
+    .Form-form{
+        top: 14.5rem;
+        min-height: 26.5rem;
+        
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: 4vh;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #17425e;
+        font-size: 30%;
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: .9vw;
+    }
+    label{
+        
+    }
+
+    .Parrafo-h3{
+        width: 25vw;
+        color: #ffffff;
+        border-bottom: 2px solid white;
+        /* background-color: darkorange; */
+        font-size: 2.5vw;
+        margin: auto;
+        font-family: var(--font-main);
+        margin-bottom: 2rem;
+    }
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 2rem auto 2rem;
+        gap: .8rem;
+        
+
+
+    }
+    .Checkbox{
+        width: 1.3vw;
+        height: 1.3vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 15vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 70%;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 2.5vw;
+        position: absolute;
+        top: -14.2rem;
+        left: 26rem;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+
+    .Close-svg.isActive , .Formulario-inicio{
+        display: none;
+    }
+
+    .Formulario-button{
+        width: 30vw;
+        padding: 2rem;
+        margin: auto;
+        border-radius: .9rem;
+
+        box-shadow: inset 9px -9px 12px #3e3e57,
+                inset -9px 9px 12px #70709d;
+        background-color: var(--bottom-color);
+        font-family: var(--font-main);
+        color: var(--color-white);
+        font-size: 2vw;
+        transform: scale(1);
+        transition: 1.5s ease all;
+    }
+
+    .Formulario-button:hover{
+        transform: scale(1.2);
+    }
+  
+
+}
+
+    /*    Modo tablet*/
+
+@media(max-width: 768px){
+   
+             /* header */
+
+    .Header-h1{
+        width: 30vw;
+    }
+
+    .Header-button{
+        display: block;
+    }
+     
+    .Header-nav{
+        width: 100%;
+        background-color: #DBDCEF;
+        height: 0;
+        overflow: hidden;
+        
+        transition: all 3s ease;
+        
+       
+    }
+     .Header-nav.isActive{
+        margin: auto;
+        
+        height: 40vh;
+        
+    }
+    .Nav-ul{
+        flex-direction: column;
+        padding: 1rem;
+    }
+   
+    .Header-li{
+        border-bottom: 1px solid #4D52AC;
+    }
+    
+    
+               /* Main */
+
+        /* INICIO */
+    
+   .Inicio-intro {
+        width: 90vw; 
+        height: 40vh;
+        min-height: 30vh; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .Info-ul{
+        max-width: 90vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .Info-li{
+        width: 100%;
+    }
+
+     /* formulario */
+
+    .Formulario-button{
+        width: 40vw;
+    }
+
+
+    .Form-form{
+        width: 40vw;
+        height: 44vh;
+        min-height: 44vh;
+        margin: -30rem  auto;
+        background-color: #263342;
+        padding: 2rem 4em;
+        color: #878791;
+        font-family: var(--font-main);
+        border-radius: 0.80rem;
+        position: absolute;
+        top: 12rem;
+        left: 20%;
+        
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: 4vh;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #17425e;
+        font-size: 30%;
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: .9vw;
+    }
+    label{
+        
+    }
+
+    .Parrafo-h3{
+        width: 25vw;
+        color: #ffffff;
+        border-bottom: 2px solid white;
+        /* background-color: darkorange; */
+        font-size: 2.5vw;
+        margin: auto;
+        font-family: var(--font-main);
+        margin-bottom: 2rem;
+    }
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 2rem auto 2rem;
+        gap: .8rem;
+        
+
+
+    }
+    .Checkbox{
+        width: 1.3vw;
+        height: 1.3vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 15vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 70%;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 2.5vw;
+        position: absolute;
+        top: -17rem;
+        left: 71%;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+
+    .Close-svg.isActive , .Formulario-inicio{
+        display: none;
+    }
+
+        /* tarifas */
+
+    .Grid-article , .Tarifas-general{
+        grid-template-columns: initial;
+    }
+
+       
+    
+        /* Extras */
+
+    .Extras-cont{
+        flex-direction: column;  
+    }
+
+    .Extras-general{
+        width: 70%;
+        margin: auto;
+        
+    }
+
+    .Extras-h2{
+        width: 80%;
+        
+    }
+
+    .Extra-first{
+        margin-bottom: 1rem;
+    }
+
+    .Asistencia-third{
+        margin-top: 1rem;
+    }
+        /* Slider */
+
+    .Slider-opinion{
+        top: 25%;
+        left: 25vw;
+        
+    }
+
+        /* Mapa */
+    
+    .Mapa-info{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+    iframe{
+        max-width: 100%;
+    }
+    .Consultoria-footer{
+       grid-template-columns: auto;
+    }
+    .Footer-h2{
+        margin:1rem auto;
+        padding: 1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+/*        background-color: darkviolet;*/
+            
+        
+    }
+    .Footer-ul{
+       text-align: center
+    }
+}
+
+            /*modo movil*/
+
+@media (max-width: 480px){
+    
+            /* Header */
+            
+    .Header-h1{
+        width: 11rem;
+    }
+  
+    .Inicio-intro{
+        width: 80vw; 
+        height: 25vh; 
+        min-height: 25vh;
+        padding: 1rem;
+        
+        
+    }
+
+    .Info-ul{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .Info-li{
+        width: 70vw;
+    }
+
+    
+
+    .Inicio-h1 {
+        width: 50vw;
+        font-size: 4vw; 
+        margin: auto;
+        word-spacing: 0;
+        /* background-color: coral; */
+    }
+
+        /* MAIN */
+
+    /* Formulario */
+    .Formulario-button{
+        width: 30vw;
+        padding: 1rem;
+    }
+
+    .Formulario-inicio{
+        /* display: none; */
+     
+        position: relative;
+        
+    }
+     
+    .Form-form{
+        width: 43vw;
+        height: 14.5rem;
+        min-height: 14.5rem;
+        margin: -30rem  auto;
+       padding: 2rem 4em;
+        top: 18rem;
+        left: 20%;
+        
+    }
+
+    .Parrafo-h3{
+    
+        color: #ffffff;
+        border-bottom: 2px solid white;    
+        font-family: var(--font-main);
+        margin-bottom: 1.5rem;
+        margin-left: -25px;
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: .7rem;
+        min-height: .7rem;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin-left: -25px;
+        padding: .6rem;
+        margin-bottom: .3rem;
+        color: #17425e;
+        font-size: 30%;
+        
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: 1vw;
+    }
+    label{
+        width: 30vw;
+        /* background-color: lawngreen; */
+    }
+
+    
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 1rem auto 1rem;
+        gap: .8rem;
+        margin-left: -20px;
+
+    }
+    .Checkbox{
+        width: 1.8vw;
+        height: 1.8vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 19vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 15vw;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1.5vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 3vw;
+        position: absolute;
+        top: -10.9rem;
+        left: 73%;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+    
+    /* Extras */
+
+    .Extras-cont{
+        flex-direction: column;  
+    }
+
+    .Extras-general{
+        width: 90%;
+        margin: auto;
+        
+    }
+    .Extras-h2{
+        width: 80%;
+        
+    }
+
+    .Extra-first{
+        margin-bottom: 1rem;
+    }
+
+    .Asistencia-third{
+        margin-top: 1rem;
+    }
+    /* Tarifas */
+    
+    .Mision-p{
+        margin-top: 1rem;
+    }
+
+    
+    .Nosotros-p{
+        margin-top: 1rem;
+    }
+  
+    .Servicios-p{
+        margin-top: 1rem;
+    }
+    
+
+    /* Opiniones */
+
+    .Opiniones-section{
+        position: relative;
+    }
+    .Grid-article{
+        padding: 1rem;
+    }
+
+    .Tarifas-h2{
+        font-size:  7vw;
+        font-weight: 700;
+        /* background-color: coral; */
+    }
+
+    .General-p{
+        font-size: 5vw;
+    }
+    
+    .Slider-wrapper{
+        max-width: 50vh;
+        max-height: 50vh;
+        display: block;
+        margin: auto;
+        left: 0;
+        position: absolute;
+    }
+
+    
+
+    .Opiniones-section{
+        height: 40vh;
+        /* background-color: chocolate; */
+    }
+    .Slider-prev , .Slider-arrow , .Slider-next{
+        width: 10vw;
+    }
+
+    .Nombre-h2{
+      font-size: 3.4vw;
+        
+    }
+    .Opinion-p{
+        font-size: 3vw;
+        
+    }
+
+    
+    .Slider-arrow{
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        border-radius: 50%;
+        padding: .8em;
+    
+        position: absolute;
+        top:35%;
+    }
+    .Slider-next{
+        width: 8vw;
+        right: 5%;
+    }
+    .Slider-prev{
+        width: 8vw;
+        left: 5%;
+    }
+    
+    
+            /* Footer */
+
+    .Footer-ul{
+        font-size: 4vw;
+       text-align: center;
+       display: grid;
+    }
+    
+    .Footer-h2{
+        margin: auto;
+        
+    }
+    
+}
